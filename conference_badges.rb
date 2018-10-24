@@ -4,8 +4,8 @@ def badge_maker(name)
    "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(speakers)
-  speakers.map do |name|
+def batch_badge_creator(attendees)
+  attendees.map do |name|
     badge_maker(name)
   end
 end
@@ -18,8 +18,8 @@ def assign_rooms(array)
   end
 end
 
-def printer(array,speakers)
-   batch_badge_creator(speakers).each do |result|
+def printer(attendees)
+   batch_badge_creator(attendees).each do |result|
      puts result
    assign_rooms(array).each do |result|
     puts result 
