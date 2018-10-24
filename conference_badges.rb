@@ -19,7 +19,7 @@ def assign_rooms(array)
 end
 
 def printer(attendees)
-  batch_bagde_creator(attendess)
+  batch_bagde_creator(attendees)
 end 
 
   
